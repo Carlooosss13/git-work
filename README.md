@@ -37,8 +37,8 @@ Uno de los desafíos más comunes con los que nos enfrentamos en los equipos de 
 
 * **Software de control de versiones:** Git instalado localmente en nuestras estaciones de trabajo.
 * **Plataforma Cloud:** Dos cuentas activas en GitHub.
-* **Entorno de desarrollo:** Editor de código y terminal (Nano / Visual Studio Code / Terminal de Linux y Bash).
-* **Archivos base de la práctica:** `index.html`, `bootstrap.min.css` y `cover.css`.
+* **Entorno de desarrollo:** Editor de código y terminal.
+* **Archivos base de la práctica
 
 ---
 
