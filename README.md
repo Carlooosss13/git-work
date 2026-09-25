@@ -77,8 +77,8 @@ git push origin main
 User 2 accede a la URL pública del repositorio de User 1 en GitHub y hace clic en el botón **Fork**. Esto genera una copia idéntica del repositorio bajo su propia cuenta. Acto seguido, clonamos esta copia en la máquina local de User 2:
 
 ```bash
-user2@maquina-local:~$ git clone https://github.com/Rodrigo-44/git-work.git
-user2@maquina-local:~$ cd git-work
+git clone https://github.com/Rodrigo-44/git-work.git
+cd git-work
 ```
 
 ### 4. Apertura del primer Issue y desarrollo en rama (User 1 y User 2)
@@ -145,9 +145,9 @@ git push origin main
 User 1 abre una segunda issue titulada `Improve UX with cool colors` (identificador asignado automáticamente por GitHub como `#3`). A continuación, modifica de forma local el archivo `cover.css`, cambiando la línea 10 a `color: purple;`. Registra el cambio localmente pero no realiza el `git push`:
 
 ```bash
-mint@mint:~/git-work$ nano cover.css
-mint@mint:~/git-work$ git add cover.css
-mint@mint:~/git-work$ git commit -m "Change color to purple in cover.css"
+nano cover.css
+git add cover.css
+git commit -m "Change color to purple in cover.css"
 [main 9736b2a] Change color to purple in cover.css
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
@@ -157,12 +157,12 @@ mint@mint:~/git-work$ git commit -m "Change color to purple in cover.css"
 Simultáneamente, User 2 crea una rama llamada `cool-colors`, edita la línea 10 del mismo archivo `cover.css` asignando el valor `color: darkgreen;` y realiza la subida para solicitar la integración:
 
 ```powershell
-PS C:\Users\Usuario\Trabajo_Carlos\git-work> git checkout -b cool-colors
+git checkout -b cool-colors
 # User 2 cambia la línea 10 de cover.css a color: darkgreen;
-PS C:\Users\Usuario\Trabajo_Carlos\git-work> git add cover.css
-PS C:\Users\Usuario\Trabajo_Carlos\git-work> git commit -m "Change color to darkgreen in cover.css"
+git add cover.css
+git commit -m "Change color to darkgreen in cover.css"
 [cool-colors 939e110] Change color to darkgreen in cover.css
-PS C:\Users\Usuario\Trabajo_Carlos\git-work> git push origin cool-colors
+git push origin cool-colors
 ```
 
 User 2 envía el correspondiente *Pull Request* a User 1. GitHub nos notifica de inmediato que el archivo posee cambios incompatibles y no se puede fusionar automáticamente.
