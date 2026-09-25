@@ -71,7 +71,6 @@ git commit -m "Initial project files"
 git push origin main
 ```
 
-*(Captura de pantalla de la creación del repositorio e inicialización)*
 
 ### 3. Bifurcación del proyecto (User 2)
 
@@ -98,7 +97,6 @@ git commit -m "Añadido texto corporativo para la startup"
 git push origin custom-text
 ```
 
-*(Captura del editor de código index.html con las etiquetas de NovaTech e Issue #1 abierta)*
 
 Una vez subido el código, User 2 accede a GitHub y abre un *Pull Request* (PR) apuntando desde su rama `USER2:custom-text` hacia la rama `USER1:main`.
 
@@ -196,10 +194,5 @@ color: darkgreen;
 
 ---
 
-## Conclusiones
-
-Mediante la realización de esta práctica hemos consolidado los siguientes aprendizajes fundamentales:
-
-1. Comprender la importancia del flujo de trabajo con *forks* y *Pull Requests* para la colaboración en proyectos sin necesidad de otorgar permisos de escritura directos a todos los colaboradores.
 2. Experimentar la resolución manual de conflictos de código, aprendiendo a auditar las diferencias y tomar decisiones de integración sin perder cambios clave.
 3. Automatizar la gestión de tareas mediante la vinculación de *Issues* y mensajes de *commit* enriquecidos (`Closes #ID`).
